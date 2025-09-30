@@ -15,5 +15,9 @@
   ],
   "type": "module",
   "author": "Andre Lucca",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "@prisma/client": "^6.16.2",
+    "prisma": "^6.16.2"
+  }
 }
