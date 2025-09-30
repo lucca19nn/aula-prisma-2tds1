@@ -1,4 +1,4 @@
-import MovieModel from "../models/game.model.js";
+import MovieModel from "../models/movies.model.js";
 
 class MovieController {
     async findAll(req, res) {
@@ -18,7 +18,6 @@ class MovieController {
         try {
             const { title, category, duration, sinopse, releaseYear } = req.body;
 
-            // Validação básica
             if (!title || !category || !duration || !sinopse || !releaseYear) {
                 return res.status(400).json({
                     error: "Campos obrigatórios não foram preenchidos",
